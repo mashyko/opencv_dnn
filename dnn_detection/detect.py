@@ -2,8 +2,8 @@
 import cv2
 
 #importing and using necessary files
-config_file='models/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
-frozen_model='models/frozen_inference_graph.pb'
+config_file='ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
+frozen_model='frozen_inference_graph.pb'
 
 #Loading Tenserflow pretrained model by using dnn_DetctionModel module
 model = cv2.dnn_DetectionModel(frozen_model,config_file)
@@ -21,7 +21,7 @@ model.setInputMean((127.5,127.5,127.5))
 model.setInputSwapRB(True)
 
 #reading image
-img = cv2.imread('models/street.jpg')
+img = cv2.imread('street.jpg')
 
 #object detection by using dnn_DetectionModel.detect module
 ClassIndex, confidence, bbox = model.detect(img, confThreshold=0.5)
