@@ -1,12 +1,16 @@
 # opencv_dnn
 
-this repo offers sample Python code used in the following website:
+This repo offers sample Python codes used in the following website:
 
-https://www.koi.mashykom.com/opencv.html , [
+https://www.koi.mashykom.com/opencv.html , 
 
 https://www.koi.mashykom.com/jetson_3 ,
 
 https://www.koi.mashykom.com/Raspi_opencv.html
+
+'''
+Usage
+'''
 
 To detect faces and eyes in the webcam stream, use Python code live_face_detect.py
 
